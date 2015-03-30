@@ -1,0 +1,71 @@
+html, body {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0 auto;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	background: #373b41;
+}
+
+.s-vv, .s-vl {
+	background: #1d1f21;
+	display: inline-flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.s-hv, .s-hl {
+	background: #1d1f21;
+	display: inline-flex;
+	flex-direction: row;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.s-vv > .s-b, .s-vl > .s-li {
+	width: 100%;
+}
+
+.s-hv > .s-b, .s-hl > .s-li {
+	height: 100%;
+}
+
+.s-t, .s-b, .s-li {
+	color: #c5c8c6;
+}
+
+.s-b, .s-li {
+	border: none;
+	outline: none;
+	font-size: 16px;
+	line-height: 16px;
+	padding: 10px;
+}
+
+.s-b {
+	background: #373b41;
+}
+
+.s-b:hover {
+	background: #282a2e;
+}
+
+.s-b:active {
+	background: #1d1f21;
+}
+
+.s-li {
+	background: #1d1f21;
+}
+
+.s-li.s-sel {
+	background: #161719;
+}
