@@ -1,6 +1,6 @@
 # Studio UI
 
-A modernist CSS framework.
+A modernist pure CSS framework.
 
 Studio UI is still in an early draft phase.
 

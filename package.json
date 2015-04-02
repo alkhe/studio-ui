@@ -1,0 +1,31 @@
+{
+  "name": "studio-ui",
+  "version": "0.0.1",
+  "description": "A modernist pure CSS framework.",
+  "main": "index.js",
+  "scripts": {
+    "test": ":"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://edge@github.com/edge/studio-ui"
+  },
+  "keywords": [
+    "css",
+    "studio",
+    "ui",
+    "framework",
+    "pure"
+  ],
+  "author": "synchronous",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/edge/studio-ui/issues"
+  },
+  "homepage": "https://github.com/edge/studio-ui",
+  "dependencies": {
+    "gulp": "^3.8.11",
+    "gulp-cssnext": "^1.0.0",
+    "gulp-jade": "^1.0.0"
+  }
+}
