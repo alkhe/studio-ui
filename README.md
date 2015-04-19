@@ -8,6 +8,10 @@ Studio UI is an advanced grid-based CSS UI framework, providing both a minimalis
 
 In the current build, a full color theme can be created by providing only two seed colors.
 
+## Sample
+
+![http://i.imgbox.com/JwMozv5W.png](http://i.imgbox.com/JwMozv5W.png)
+
 ## Documentation
 
 All Studio classes are prefixed with `s-`.
