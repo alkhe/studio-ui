@@ -14,22 +14,22 @@ In the current build, a full color theme can be created by providing only two se
 
 ## Documentation
 
-All Studio classes are prefixed with `s-`.
+All elements using Studio classes must have class `s`.
 
 line-height + 2 * padding will be referred to as *item height*
 
 ### Core
 
-#### s-vv
+#### vv
 vertical view
 
-#### s-vh
+#### vh
 horizontal view
 
-#### s-b
+#### b
 button
 
-#### s-li
+#### li
 list item
 
 ### Quick Layout

@@ -158,14 +158,32 @@ body {
 	height: calc(100% - 2 * 3px);
 }
 
-.s.tx, .s.b, .s.li, .s.in {
-	color: #c5c8c6;
-	outline: none;
-	font-size: 16px;
-	line-height: 16px;
+.s.tx, .s.b, .s.li, .s.in, .s.pb {
 	padding: 10px;
+}
+
+.s.tx, .s.b, .s.li, .s.in, .s.pr {
+	color: #c5c8c6;
+	line-height: 16px;
+	font-size: 16px;
+	outline: none;
 	margin: 3px;
 	border-radius: 3px;
+}
+
+.s.pr {
+	border: 1px solid #373b41;
+	border: 1px solid #29c596;
+	overflow: hidden;
+}
+
+.s.pr > .s.pb {
+	margin-top: -1px;
+	background: #373b41;
+	background: #29c596;
+	height: calc(100% - 2 * 3px);
+	text-align: center;
+	white-space: nowrap;
 }
 
 .s.tx, .s.b, .s.li {

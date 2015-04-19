@@ -133,14 +133,30 @@ body {
 	height: calc(100% - 2 * var(--space));
 }
 
-.s.tx, .s.b, .s.li, .s.in {
-	color: var(--normFg);
-	outline: none;
-	font-size: var(--size);
-	line-height: var(--size);
+.s.tx, .s.b, .s.li, .s.in, .s.pb {
 	padding: var(--pad);
+}
+
+.s.tx, .s.b, .s.li, .s.in, .s.pr {
+	color: var(--normFg);
+	line-height: var(--size);
+	font-size: var(--size);
+	outline: none;
 	margin: var(--space);
 	border-radius: var(--radius);
+}
+
+.s.pr {
+	border: 1px solid var(--centBg);
+	overflow: hidden;
+}
+
+.s.pr > .s.pb {
+	margin-top: -1px;
+	background: var(--centBg);
+	height: calc(100% - 2 * var(--space));
+	text-align: center;
+	white-space: nowrap;
 }
 
 .s.tx, .s.b, .s.li {

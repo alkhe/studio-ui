@@ -2,6 +2,23 @@ html
 	head
 		link(rel='stylesheet' href='./local/local.css')
 		link(rel='stylesheet' href='./dist/studio.css')
+		script(src='http://code.jquery.com/jquery-1.11.2.min.js')
+		script.
+			$(document).ready(function() {
+				var body = $(document.body);
+				body.on('click', '.s.li', function(e) {
+					$(e.target).toggleClass('sel');
+				});
+				var progressbar = $('.s.pb:last');
+				progressbar.animate({
+					width: '100%'
+				}, {
+					step: function(now, fx) {
+						progressbar.text('Progress: ' + now.toFixed(2) + '%');
+					},
+					duration: 4000
+				});
+			});
 	body.s.ns
 		.s.c.fe
 			.s.r.fw
@@ -26,6 +43,14 @@ html
 					.s.li Item C
 					.s.li.sel Item D
 					input.s.in(placeholder='Type something...')
+					.s.pr.ff
+						.s.pb(style='width: 57%') Progress: 57%
+					.s.pr.ff
+						.s.pb(style='width: 32%') Progress: 32%
+					.s.pr.ff
+						.s.pb(style='width: 79%') Progress: 79%
+					.s.pr.ff
+						.s.pb(style='width: 2%') Progress: 2%
 			.s.r.fw
 				.s.vh.lh
 					.s.tx List
@@ -150,7 +175,7 @@ html
 						button.s.b Button
 						button.s.b Button
 						button.s.b Button
-		//- .s.c.fe
+		//- .s.c.s.fe
 			.s.r.fw
 				.s.vh.lh.wr
 					.s.tx List
