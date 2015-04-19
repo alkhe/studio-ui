@@ -3,21 +3,26 @@
  */
 
 :root {
-	--normBg: #373b41;
+	--background: #373b41;
+	--foreground: #c5c8c6;
+	--selected: #29c596;
+
+	--normBg: var(--background);
 	--semiBg: color(var(--normBg) shade(30));
 	--darkBg: color(var(--normBg) shade(40));
 	--duskBg: color(var(--normBg) shade(50));
 
-	--normFg: #c5c8c6;
+	--normFg: var(--foreground);
 	--semiFg: color(var(--normFg) shade(30));
 	--darkFg: color(var(--normFg) shade(40));
 	--duskFg: color(var(--normFg) shade(50));
 
-	--centBg: #6686c4;
+	--centBg: var(--selected, var(--background));
 
 	--size: 16px;
 	--pad: 10px;
 	--space: 3px;
+	--radius: 3px;
 	--lh: calc(var(--size) + 2 * var(--pad));
 }
 
@@ -91,6 +96,7 @@ body {
 	display: inline-flex;
 	margin: var(--space);
 	padding: var(--space);
+	border-radius: var(--radius);
 }
 
 /**
@@ -134,6 +140,7 @@ body {
 	line-height: var(--size);
 	padding: var(--pad);
 	margin: var(--space);
+	border-radius: var(--radius);
 }
 
 .s-tx, .s-b, .s-li {

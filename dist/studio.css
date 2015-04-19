@@ -113,6 +113,7 @@ body {
 	display: inline-flex;
 	margin: 3px;
 	padding: 3px;
+	border-radius: 3px;
 }
 
 /**
@@ -164,6 +165,7 @@ body {
 	line-height: 16px;
 	padding: 10px;
 	margin: 3px;
+	border-radius: 3px;
 }
 
 .s-tx, .s-b, .s-li {
@@ -196,7 +198,8 @@ body {
 }
 
 .s-li:hover, .s-li.s-sel {
-	background: #6686c4;
+	background: #373b41;
+	background: #29c596;
 	color: #c5c8c6;
 }
 

@@ -6,6 +6,8 @@ Warning: Studio UI is still in an early draft phase.
 
 Studio UI is an advanced grid-based CSS UI framework, providing both a minimalist yet powerful layout system. It relies heavily on Flexbox, which is supported by all modern browsers.
 
+In the current build, a full color theme can be created by providing only two seed colors.
+
 ## Documentation
 
 All Studio classes are prefixed with `s-`.
@@ -62,3 +64,14 @@ no select
 - Custom Color Compile
 - Maybe: typography/modal/image/dropdown/progress bar/slider/breadcrumb/etc.
 - Update Todo
+
+## Sample Themes
+
+Gray/Blue
+`#373b41 | #c5c8c6 | #6686c4`
+
+Gray/Green
+`#373b41 | #c5c8c6 | #29c596`
+
+Red
+`#ac3b39 | #ddb0af`
