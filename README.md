@@ -10,7 +10,7 @@ In the current build, a full color theme can be created by providing only two se
 
 ## Sample
 
-![http://i.imgbox.com/JwMozv5W.png](http://i.imgbox.com/JwMozv5W.png)
+![http://i.imgbox.com/Rx8pfubo.png](http://i.imgbox.com/Rx8pfubo.png)
 
 ## Documentation
 
