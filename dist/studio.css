@@ -3,19 +3,19 @@
  */
 
 ::-webkit-input-placeholder {
-	color: #c5c8c6;
+	color: rgb(138, 140, 139);
 }
 
 ::-moz-placeholder {
-	color: #c5c8c6;
+	color: rgb(138, 140, 139);
 }
 
 :-ms-input-placeholder {
-	color: #c5c8c6;
+	color: rgb(138, 140, 139);
 }
 
 ::placeholder {
-	color: #c5c8c6;
+	color: rgb(138, 140, 139);
 }
 
 html, body {
@@ -172,13 +172,13 @@ body {
 }
 
 .s.pr {
-	border: 1px solid #373b41;
-	border: 1px solid #29c596;
+	border: 3px solid #373b41;
+	border: 3px solid #29c596;
 	overflow: hidden;
 }
 
 .s.pr > .s.pb {
-	margin-top: -1px;
+	margin-top: -3px;
 	background: #373b41;
 	background: #29c596;
 	height: calc(100% - 2 * 3px);
@@ -191,7 +191,7 @@ body {
 }
 
 .s.in {
-	border: 1px solid #373b41;
+	border: 3px solid #373b41;
 	background: rgb(33, 35, 39);
 }
 
@@ -216,9 +216,17 @@ body {
 }
 
 .s.li:hover, .s.li.sel {
+	color: #c5c8c6;
+}
+
+.s.li:hover {
+	background: rgb(39, 41, 46);
+	background: rgb(29, 138, 105);
+}
+
+.s.li.sel {
 	background: #373b41;
 	background: #29c596;
-	color: #c5c8c6;
 }
 
 .s.in:hover {
@@ -227,6 +235,11 @@ body {
 
 .s.in:active, .s.in:focus {
 	background: rgb(28, 30, 33);
+}
+
+.s.b, .s.li, .s.in {
+	-webkit-transition: .08s ease-out;
+	        transition: .08s ease-out;
 }
 
 .s.lh {

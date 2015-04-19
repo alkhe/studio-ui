@@ -14,7 +14,7 @@ html
 					width: '100%'
 				}, {
 					step: function(now, fx) {
-						progressbar.text('Progress: ' + now.toFixed(2) + '%');
+						progressbar.text(now.toFixed(2) + '%');
 					},
 					duration: 4000
 				});
@@ -50,7 +50,7 @@ html
 					.s.pr.ff
 						.s.pb(style='width: 79%') Progress: 79%
 					.s.pr.ff
-						.s.pb(style='width: 2%') Progress: 2%
+						.s.pb(style='width: 2%')
 			.s.r.fw
 				.s.vh.lh
 					.s.tx List
@@ -87,7 +87,7 @@ html
 								button.s.b Button
 								button.s.b Button
 								button.s.b Button
-								input.s.in
+								input.s.in(placeholder='Input')
 						.s.c.f2
 							.s.vv.wr
 								button.s.b Wide Button

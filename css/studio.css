@@ -18,16 +18,18 @@
 	--duskFg: color(var(--normFg) shade(50));
 
 	--centBg: var(--selected, var(--background));
+	--highBg: color(var(--centBg) shade(30));
 
 	--size: 16px;
 	--pad: 10px;
 	--space: 3px;
+	--bsize: 3px;
 	--radius: 3px;
 	--lh: calc(var(--size) + 2 * var(--pad));
 }
 
 ::placeholder {
-	color: var(--normFg);
+	color: var(--semiFg);
 }
 
 html, body {
@@ -147,12 +149,12 @@ body {
 }
 
 .s.pr {
-	border: 1px solid var(--centBg);
+	border: var(--bsize) solid var(--centBg);
 	overflow: hidden;
 }
 
 .s.pr > .s.pb {
-	margin-top: -1px;
+	margin-top: -var(--bsize);
 	background: var(--centBg);
 	height: calc(100% - 2 * var(--space));
 	text-align: center;
@@ -164,7 +166,7 @@ body {
 }
 
 .s.in {
-	border: 1px solid var(--normBg);
+	border: var(--bsize) solid var(--normBg);
 	background: var(--darkBg);
 }
 
@@ -189,8 +191,15 @@ body {
 }
 
 .s.li:hover, .s.li.sel {
-	background: var(--centBg);
 	color: var(--normFg);
+}
+
+.s.li:hover {
+	background: var(--highBg);
+}
+
+.s.li.sel {
+	background: var(--centBg);
 }
 
 .s.in:hover {
@@ -199,6 +208,10 @@ body {
 
 .s.in:active, .s.in:focus {
 	background: var(--duskBg);
+}
+
+.s.b, .s.li, .s.in {
+	transition: .08s ease-out;
 }
 
 .s.lh {
