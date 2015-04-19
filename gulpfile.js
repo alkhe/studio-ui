@@ -23,3 +23,11 @@ gulp.task('compile', function() {
 		.pipe(jade())
 		.pipe(gulp.dest(here));
 });
+
+gulp.task('build', function() {
+	gulp.src(src)
+		.pipe(cssnext({
+			compress: true
+		}))
+		.pipe(gulp.dest(dst));
+});
