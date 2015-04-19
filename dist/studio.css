@@ -2,6 +2,22 @@
  * Theme Definitions
  */
 
+::-webkit-input-placeholder {
+	color: #c5c8c6;
+}
+
+::-moz-placeholder {
+	color: #c5c8c6;
+}
+
+:-ms-input-placeholder {
+	color: #c5c8c6;
+}
+
+::placeholder {
+	color: #c5c8c6;
+}
+
 html, body {
 	box-sizing: border-box;
 	margin: 0;
@@ -21,56 +37,71 @@ body {
 
 body {
 	background: #373b41;
-}
-
-.s-r {
-	-webkit-box-flex: 1;
-	-webkit-flex: 1;
-	    -ms-flex: 1;
-	        flex: 1;
-	display: -webkit-inline-box;
-	display: -webkit-inline-flex;
-	display: -ms-inline-flexbox;
-	display: inline-flex;
-	-webkit-flex-wrap: wrap;
-	    -ms-flex-wrap: wrap;
-	        flex-wrap: wrap;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: row;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
-	width: 100%;
-}
-
-.s-c {
-	-webkit-box-flex: 1;
-	-webkit-flex: 1;
-	    -ms-flex: 1;
-	        flex: 1;
-	display: -webkit-inline-box;
-	display: -webkit-inline-flex;
-	display: -ms-inline-flexbox;
-	display: inline-flex;
-	-webkit-flex-wrap: wrap;
-	    -ms-flex-wrap: wrap;
-	        flex-wrap: wrap;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: column;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
-	width: 100%;
 }
 
-.s-fi {
+.s-r, .s-c {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+	display: -webkit-inline-box;
+	display: -webkit-inline-flex;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+}
+
+/**
+ * Row
+ */
+
+.s-r {
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+}
+
+/**
+ * Column
+ */
+
+.s-c {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+
+/**
+ * Wrap
+ */
+
+.s-fw {
 	-webkit-box-flex: 0;
 	-webkit-flex: 0 auto;
 	    -ms-flex: 0 auto;
 	        flex: 0 auto;
 }
 
-.s-sw {
+/**
+ * Expand
+ */
+
+.s-fe {
 	height: 100%;
 }
 
@@ -84,14 +115,22 @@ body {
 	padding: 3px;
 }
 
+/**
+ * Vertical View
+ */
+
 .s-vv {
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: column;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
-	height: calc(100% - 2 * 3px);
+	height: 100%;
 }
+
+/**
+ * Horizontal View
+ */
 
 .s-vh {
 	-webkit-box-orient: horizontal;
@@ -99,28 +138,41 @@ body {
 	-webkit-flex-direction: row;
 	    -ms-flex-direction: row;
 	        flex-direction: row;
+	width: 100%;
+}
+
+.s-vv.s-wr {
+	height: auto;
+}
+
+.s-vh.s-wr {
+	width: auto;
+}
+
+.s-vv > .s-tx, .s-vv > .s-b, .s-vv > .s-li {
 	width: calc(100% - 2 * 3px);
 }
 
-.s-vv > .s-b, .s-vv > .s-li {
-	width: calc(100% - 2 * 3px);
-}
-
-.s-vh > .s-b, .s-vh > .s-li {
+.s-vh > .s-tx. .s-vh > .s-b, .s-vh > .s-li {
 	height: calc(100% - 2 * 3px);
 }
 
-.s-t, .s-b, .s-li {
+.s-tx, .s-b, .s-li, .s-in {
 	color: #c5c8c6;
-}
-
-.s-b, .s-li {
-	border: none;
 	outline: none;
 	font-size: 16px;
 	line-height: 16px;
 	padding: 10px;
 	margin: 3px;
+}
+
+.s-tx, .s-b, .s-li {
+	border: none;
+}
+
+.s-in {
+	border: 1px solid #373b41;
+	background: rgb(33, 35, 39);
 }
 
 .s-b {
@@ -148,16 +200,16 @@ body {
 	color: #c5c8c6;
 }
 
+.s-in:hover {
+	background: rgb(39, 41, 46);
+}
+
+.s-in:active, .s-in:focus {
+	background: rgb(28, 30, 33);
+}
+
 .s-lh {
 	height: 48px;
-}
-
-.s-vh.s-wr {
-	width: auto;
-}
-
-.s-vv.s-wr {
-	height: auto;
 }
 
 .s-al {

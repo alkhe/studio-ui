@@ -2,7 +2,9 @@
 
 A modernist pure CSS framework.
 
-Studio UI is still in an early draft phase.
+Warning: Studio UI is still in an early draft phase.
+
+Studio UI is an advanced grid-based CSS UI framework, providing both a minimalist yet powerful layout system. It relies heavily on Flexbox, which is supported by all modern browsers.
 
 ## Documentation
 
@@ -58,5 +60,5 @@ no select
 - Build system
 - Full React integration
 - Custom Color Compile
-- input/grid/typography/modal/image/dropdown/progress bar/slider/breadcrumb/etc.
+- Maybe: typography/modal/image/dropdown/progress bar/slider/breadcrumb/etc.
 - Update Todo
