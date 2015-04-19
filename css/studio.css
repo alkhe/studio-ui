@@ -53,7 +53,7 @@ body {
 	flex-direction: column;
 }
 
-.s-r, .s-c {
+.s.r, .s.c {
 	flex: 1;
 	display: inline-flex;
 	flex-wrap: wrap;
@@ -63,7 +63,7 @@ body {
  * Row
  */
 
-.s-r {
+.s.r {
 	flex-direction: row;
 }
 
@@ -71,7 +71,7 @@ body {
  * Column
  */
 
-.s-c {
+.s.c {
 	flex-direction: column;
 }
 
@@ -79,7 +79,7 @@ body {
  * Wrap
  */
 
-.s-fw {
+.s.fw {
 	flex: 0 auto;
 }
 
@@ -87,11 +87,11 @@ body {
  * Expand
  */
 
-.s-fe {
+.s.fe {
 	height: 100%;
 }
 
-.s-vv, .s-vh {
+.s.vv, .s.vh {
 	background: var(--darkBg);
 	display: inline-flex;
 	margin: var(--space);
@@ -103,7 +103,7 @@ body {
  * Vertical View
  */
 
-.s-vv {
+.s.vv {
 	flex-direction: column;
 	height: 100%;
 }
@@ -112,28 +112,28 @@ body {
  * Horizontal View
  */
 
-.s-vh {
+.s.vh {
 	flex-direction: row;
 	width: 100%;
 }
 
-.s-vv.s-wr {
+.s.vv.wr {
 	height: auto;
 }
 
-.s-vh.s-wr {
+.s.vh.wr {
 	width: auto;
 }
 
-.s-vv > .s-tx, .s-vv > .s-b, .s-vv > .s-li {
+.s.vv > .s.tx, .s.vv > .s.b, .s.vv > .s.li {
 	width: calc(100% - 2 * var(--space));
 }
 
-.s-vh > .s-tx. .s-vh > .s-b, .s-vh > .s-li {
+.s.vh > .s.tx, .s.vh > .s.b, .s.vh > .s.li {
 	height: calc(100% - 2 * var(--space));
 }
 
-.s-tx, .s-b, .s-li, .s-in {
+.s.tx, .s.b, .s.li, .s.in {
 	color: var(--normFg);
 	outline: none;
 	font-size: var(--size);
@@ -143,112 +143,112 @@ body {
 	border-radius: var(--radius);
 }
 
-.s-tx, .s-b, .s-li {
+.s.tx, .s.b, .s.li {
 	border: none;
 }
 
-.s-in {
+.s.in {
 	border: 1px solid var(--normBg);
 	background: var(--darkBg);
 }
 
-.s-b {
+.s.b {
 	background: var(--normBg);
 	color: var(--normFg);
 }
 
-.s-b:hover {
+.s.b:hover {
 	background: var(--semiBg);
 	color: var(--semiFg);
 }
 
-.s-b:active {
+.s.b:active {
 	background: var(--darkBg);
 	color: var(--darkFg);
 }
 
-.s-li {
+.s.li {
 	background: var(--darkBg);
 	color: var(--darkFg);
 }
 
-.s-li:hover, .s-li.s-sel {
+.s.li:hover, .s.li.sel {
 	background: var(--centBg);
 	color: var(--normFg);
 }
 
-.s-in:hover {
+.s.in:hover {
 	background: var(--semiBg);
 }
 
-.s-in:active, .s-in:focus {
+.s.in:active, .s.in:focus {
 	background: var(--duskBg);
 }
 
-.s-lh {
+.s.lh {
 	height: calc(var(--lh) + 4 * var(--space));
 }
 
-.s-al {
+.s.al {
 	text-align: left;
 }
 
-.s-ac {
+.s.ac {
 	text-align: center;
 }
 
-.s-ar {
+.s.ar {
 	text-align: right;
 }
 
-.s-aj {
+.s.aj {
 	text-align: justify;
 }
 
-.s-ns {
+.s.ns {
 	user-select: none;
 }
 
-.s-ff {
+.s.ff {
 	flex: 1;
 }
 
-.s-f1 {
+.s.f1 {
 	flex-grow: 1;
 }
 
-.s-f2 {
+.s.f2 {
 	flex-grow: 2;
 }
 
-.s-f3 {
+.s.f3 {
 	flex-grow: 3;
 }
 
-.s-f4 {
+.s.f4 {
 	flex-grow: 4;
 }
 
-.s-f5 {
+.s.f5 {
 	flex-grow: 5;
 }
 
-.s-f6 {
+.s.f6 {
 	flex-grow: 6;
 }
 
-.s-f7 {
+.s.f7 {
 	flex-grow: 7;
 }
 
-.s-f8 {
+.s.f8 {
 	flex-grow: 8;
 }
 
-.s-f9 {
+.s.f9 {
 	flex-grow: 9;
 }
 
-.s-f10 {
+.s.f10 {
 	flex-grow: 10;
 }

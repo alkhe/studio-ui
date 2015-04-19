@@ -48,7 +48,7 @@ body {
 	        flex-direction: column;
 }
 
-.s-r, .s-c {
+.s.r, .s.c {
 	-webkit-box-flex: 1;
 	-webkit-flex: 1;
 	    -ms-flex: 1;
@@ -66,7 +66,7 @@ body {
  * Row
  */
 
-.s-r {
+.s.r {
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: row;
@@ -78,7 +78,7 @@ body {
  * Column
  */
 
-.s-c {
+.s.c {
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: column;
@@ -90,7 +90,7 @@ body {
  * Wrap
  */
 
-.s-fw {
+.s.fw {
 	-webkit-box-flex: 0;
 	-webkit-flex: 0 auto;
 	    -ms-flex: 0 auto;
@@ -101,11 +101,11 @@ body {
  * Expand
  */
 
-.s-fe {
+.s.fe {
 	height: 100%;
 }
 
-.s-vv, .s-vh {
+.s.vv, .s.vh {
 	background: rgb(33, 35, 39);
 	display: -webkit-inline-box;
 	display: -webkit-inline-flex;
@@ -120,7 +120,7 @@ body {
  * Vertical View
  */
 
-.s-vv {
+.s.vv {
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: column;
@@ -133,7 +133,7 @@ body {
  * Horizontal View
  */
 
-.s-vh {
+.s.vh {
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: row;
@@ -142,23 +142,23 @@ body {
 	width: 100%;
 }
 
-.s-vv.s-wr {
+.s.vv.wr {
 	height: auto;
 }
 
-.s-vh.s-wr {
+.s.vh.wr {
 	width: auto;
 }
 
-.s-vv > .s-tx, .s-vv > .s-b, .s-vv > .s-li {
+.s.vv > .s.tx, .s.vv > .s.b, .s.vv > .s.li {
 	width: calc(100% - 2 * 3px);
 }
 
-.s-vh > .s-tx. .s-vh > .s-b, .s-vh > .s-li {
+.s.vh > .s.tx, .s.vh > .s.b, .s.vh > .s.li {
 	height: calc(100% - 2 * 3px);
 }
 
-.s-tx, .s-b, .s-li, .s-in {
+.s.tx, .s.b, .s.li, .s.in {
 	color: #c5c8c6;
 	outline: none;
 	font-size: 16px;
@@ -168,147 +168,147 @@ body {
 	border-radius: 3px;
 }
 
-.s-tx, .s-b, .s-li {
+.s.tx, .s.b, .s.li {
 	border: none;
 }
 
-.s-in {
+.s.in {
 	border: 1px solid #373b41;
 	background: rgb(33, 35, 39);
 }
 
-.s-b {
+.s.b {
 	background: #373b41;
 	color: #c5c8c6;
 }
 
-.s-b:hover {
+.s.b:hover {
 	background: rgb(39, 41, 46);
 	color: rgb(138, 140, 139);
 }
 
-.s-b:active {
+.s.b:active {
 	background: rgb(33, 35, 39);
 	color: rgb(118, 120, 119);
 }
 
-.s-li {
+.s.li {
 	background: rgb(33, 35, 39);
 	color: rgb(118, 120, 119);
 }
 
-.s-li:hover, .s-li.s-sel {
+.s.li:hover, .s.li.sel {
 	background: #373b41;
 	background: #29c596;
 	color: #c5c8c6;
 }
 
-.s-in:hover {
+.s.in:hover {
 	background: rgb(39, 41, 46);
 }
 
-.s-in:active, .s-in:focus {
+.s.in:active, .s.in:focus {
 	background: rgb(28, 30, 33);
 }
 
-.s-lh {
+.s.lh {
 	height: 48px;
 }
 
-.s-al {
+.s.al {
 	text-align: left;
 }
 
-.s-ac {
+.s.ac {
 	text-align: center;
 }
 
-.s-ar {
+.s.ar {
 	text-align: right;
 }
 
-.s-aj {
+.s.aj {
 	text-align: justify;
 }
 
-.s-ns {
+.s.ns {
 	-webkit-user-select: none;
 	   -moz-user-select: none;
 	    -ms-user-select: none;
 	        user-select: none;
 }
 
-.s-ff {
+.s.ff {
 	-webkit-box-flex: 1;
 	-webkit-flex: 1;
 	    -ms-flex: 1;
 	        flex: 1;
 }
 
-.s-f1 {
+.s.f1 {
 	-webkit-box-flex: 1;
 	-webkit-flex-grow: 1;
 	    -ms-flex-positive: 1;
 	        flex-grow: 1;
 }
 
-.s-f2 {
+.s.f2 {
 	-webkit-box-flex: 2;
 	-webkit-flex-grow: 2;
 	    -ms-flex-positive: 2;
 	        flex-grow: 2;
 }
 
-.s-f3 {
+.s.f3 {
 	-webkit-box-flex: 3;
 	-webkit-flex-grow: 3;
 	    -ms-flex-positive: 3;
 	        flex-grow: 3;
 }
 
-.s-f4 {
+.s.f4 {
 	-webkit-box-flex: 4;
 	-webkit-flex-grow: 4;
 	    -ms-flex-positive: 4;
 	        flex-grow: 4;
 }
 
-.s-f5 {
+.s.f5 {
 	-webkit-box-flex: 5;
 	-webkit-flex-grow: 5;
 	    -ms-flex-positive: 5;
 	        flex-grow: 5;
 }
 
-.s-f6 {
+.s.f6 {
 	-webkit-box-flex: 6;
 	-webkit-flex-grow: 6;
 	    -ms-flex-positive: 6;
 	        flex-grow: 6;
 }
 
-.s-f7 {
+.s.f7 {
 	-webkit-box-flex: 7;
 	-webkit-flex-grow: 7;
 	    -ms-flex-positive: 7;
 	        flex-grow: 7;
 }
 
-.s-f8 {
+.s.f8 {
 	-webkit-box-flex: 8;
 	-webkit-flex-grow: 8;
 	    -ms-flex-positive: 8;
 	        flex-grow: 8;
 }
 
-.s-f9 {
+.s.f9 {
 	-webkit-box-flex: 9;
 	-webkit-flex-grow: 9;
 	    -ms-flex-positive: 9;
 	        flex-grow: 9;
 }
 
-.s-f10 {
+.s.f10 {
 	-webkit-box-flex: 10;
 	-webkit-flex-grow: 10;
 	    -ms-flex-positive: 10;
