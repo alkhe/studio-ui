@@ -15,14 +15,8 @@ line-height + 2 * padding will be referred to as *item height*
 #### s-vv
 vertical view
 
-#### s-hv
+#### s-vh
 horizontal view
-
-#### s-vl
-vertical list
-
-#### s-hl
-horizonatl list
 
 #### s-b
 button
@@ -38,6 +32,27 @@ width = width
 
 #### s-lh
 height = *item height*
+
+#### s-wh
+wrap children width
+
+#### s-wv
+wrap children height
+
+#### s-al
+left align text
+
+#### s-ac
+center align text
+
+#### s-ar
+right align text
+
+#### s-aj
+justify text
+
+#### s-ns
+no select
 
 ## Todo
 - Build system

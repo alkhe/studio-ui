@@ -1,7 +1,18 @@
+/**
+ * Theme Definitions
+ */
+
 html, body {
 	box-sizing: border-box;
+	margin: 0;
+}
+
+html {
 	padding: 0;
-	margin: 0 auto;
+}
+
+body {
+	padding: 3px;
 }
 
 *, *:before, *:after {
@@ -12,40 +23,91 @@ body {
 	background: #373b41;
 }
 
-.s-vv, .s-vl, .s-hv, .s-hl {
-	background: rgb(33, 35, 39);
+.s-r {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
 	display: -webkit-inline-box;
 	display: -webkit-inline-flex;
 	display: -ms-inline-flexbox;
 	display: inline-flex;
-	height: 100%;
-	width: 100%;
-	margin: 0 auto;
-	/*border: 1px solid var(--darkBg);*/
-}
-
-.s-vv, .s-vl {
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-}
-
-.s-hv, .s-hl {
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: row;
 	    -ms-flex-direction: row;
 	        flex-direction: row;
-}
-
-.s-vv > .s-b, .s-vl > .s-li {
 	width: 100%;
 }
 
-.s-hv > .s-b, .s-hl > .s-li {
+.s-c {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+	display: -webkit-inline-box;
+	display: -webkit-inline-flex;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	width: 100%;
+}
+
+.s-fi {
+	-webkit-box-flex: 0;
+	-webkit-flex: 0 auto;
+	    -ms-flex: 0 auto;
+	        flex: 0 auto;
+}
+
+.s-sw {
 	height: 100%;
+}
+
+.s-vv, .s-vh {
+	background: rgb(33, 35, 39);
+	display: -webkit-inline-box;
+	display: -webkit-inline-flex;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	margin: 3px;
+	padding: 3px;
+}
+
+.s-vv {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	height: calc(100% - 2 * 3px);
+}
+
+.s-vh {
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	width: calc(100% - 2 * 3px);
+}
+
+.s-vv > .s-b, .s-vv > .s-li {
+	width: calc(100% - 2 * 3px);
+}
+
+.s-vh > .s-b, .s-vh > .s-li {
+	height: calc(100% - 2 * 3px);
 }
 
 .s-t, .s-b, .s-li {
@@ -58,6 +120,7 @@ body {
 	font-size: 16px;
 	line-height: 16px;
 	padding: 10px;
+	margin: 3px;
 }
 
 .s-b {
@@ -80,31 +143,119 @@ body {
 	color: rgb(118, 120, 119);
 }
 
-.s-li.s-sel {
+.s-li:hover, .s-li.s-sel {
 	background: #6686c4;
 	color: #c5c8c6;
 }
 
-.s-100 {
-	width: 100px;
-}
-
-.s-200 {
-	width: 200px;
-}
-
-.s-300 {
-	width: 300px;
-}
-
-.s-400 {
-	width: 400px;
-}
-
-.s-500 {
-	width: 500px;
-}
-
 .s-lh {
-	height: 36px;
+	height: 48px;
+}
+
+.s-vh.s-wr {
+	width: auto;
+}
+
+.s-vv.s-wr {
+	height: auto;
+}
+
+.s-al {
+	text-align: left;
+}
+
+.s-ac {
+	text-align: center;
+}
+
+.s-ar {
+	text-align: right;
+}
+
+.s-aj {
+	text-align: justify;
+}
+
+.s-ns {
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+}
+
+.s-ff {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+}
+
+.s-f1 {
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
+}
+
+.s-f2 {
+	-webkit-box-flex: 2;
+	-webkit-flex-grow: 2;
+	    -ms-flex-positive: 2;
+	        flex-grow: 2;
+}
+
+.s-f3 {
+	-webkit-box-flex: 3;
+	-webkit-flex-grow: 3;
+	    -ms-flex-positive: 3;
+	        flex-grow: 3;
+}
+
+.s-f4 {
+	-webkit-box-flex: 4;
+	-webkit-flex-grow: 4;
+	    -ms-flex-positive: 4;
+	        flex-grow: 4;
+}
+
+.s-f5 {
+	-webkit-box-flex: 5;
+	-webkit-flex-grow: 5;
+	    -ms-flex-positive: 5;
+	        flex-grow: 5;
+}
+
+.s-f6 {
+	-webkit-box-flex: 6;
+	-webkit-flex-grow: 6;
+	    -ms-flex-positive: 6;
+	        flex-grow: 6;
+}
+
+.s-f7 {
+	-webkit-box-flex: 7;
+	-webkit-flex-grow: 7;
+	    -ms-flex-positive: 7;
+	        flex-grow: 7;
+}
+
+.s-f8 {
+	-webkit-box-flex: 8;
+	-webkit-flex-grow: 8;
+	    -ms-flex-positive: 8;
+	        flex-grow: 8;
+}
+
+.s-f9 {
+	-webkit-box-flex: 9;
+	-webkit-flex-grow: 9;
+	    -ms-flex-positive: 9;
+	        flex-grow: 9;
+}
+
+.s-f10 {
+	-webkit-box-flex: 10;
+	-webkit-flex-grow: 10;
+	    -ms-flex-positive: 10;
+	        flex-grow: 10;
 }

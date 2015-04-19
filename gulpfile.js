@@ -11,7 +11,7 @@ const gulp = require('gulp'),
 gulp.task('default', ['watch']);
 
 gulp.task('watch', function() {
-	gulp.watch(src, ['compile']);
+	gulp.watch([src, jsrc], ['compile']);
 });
 
 gulp.task('compile', function() {
